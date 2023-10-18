@@ -19,7 +19,7 @@ jobs:
           username: ${{ secrets.AWS_ACCESS_KEY_ID }}
           password: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           space_username: ${{ secrets.SPACE_USERNAME }}
-          space_password: ${{ space.PASSWORD }}
-          api_url: ${{ API_URL }}
+          space_password: ${{ secrets.SPACE_PASSWORD }}
+          api_url: ${{ secrets.API_URL }}
         
       
