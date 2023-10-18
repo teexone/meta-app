@@ -1,0 +1,9 @@
+tx.hello-world:
+  name: Hello World
+  description: A simplistic hello world application
+  visibility:
+    - public
+  app:
+    container_ref: public.ecr.aws/u6e1k0c7/tx-hello-world:latest
+    container_user: null
+    container_token: null

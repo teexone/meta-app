@@ -1,0 +1,33 @@
+dependencies:
+- utility:
+    installer: image
+    options:
+      checksum: 7d2dfc7ba57684e2f32e40cd2822729124d53ca3255e9c919d0ac39498985b56
+      core_auth_token: null
+      core_auth_user: null
+      core_host: https://core.malevich.ai
+      image_auth_pass: null
+      image_auth_user: null
+      image_ref: public.ecr.aws/u6e1k0c7/utility:latest
+      operations:
+        05cd2fdf9d6a5f78b359c91f9026c6c99f711e0ea15d71d034485c73c6ecd08b: sink_four
+        101035d7f1bafc6563766358c50e9cf2ca2338fc6e5e8cf229249954cd247b88: s3_download_files
+        18ada2ab1ca32bd490e3c11f5936f54da7a60f10006819ee9ea78fa6f06f23d2: s3_save
+        37c077dc38fdbf4c8ff300cc4e9bb208044cc37e2211bcc3f1d6ebfd8fe6dcfa: sink_two
+        393a8ae525278d7fbbb8fadd6d5bd5f8245a7cb8733dd017b1785b8a21777a8c: s3_save_files_auto
+        3fb9f68e7f3d21750576e264e6df0e7a66d556929b2771c3ce20ff82c0051059: subset
+        4187eb47a2d4804f4a8207a9f5477843b242888dcad5d3d1bf5e607ccec025df: merge
+        47cd353ca4c76fe8e0f2683754a6cfd5c2020a1253a2a99a2b5143ceb226c734: s3_save_files
+        498efec857af8de1732ed09b1c5b55b1c758c922ca24501ca46b368d3840fd45: merge_three
+        88bbd10e200689cb73e1dee59799efa8f5d344482fb1fed902f78fa42c07ce12: add_column
+        88d4871e5e0d89c05a871318c6d885069c4b294aa0dc0df701c2e112e2e5d99d: rename
+        9d6d2505bfc72efe51f54193e01ff09527cf4b14057dd94c79d899a555016ad1: merge_two
+        ab7efb60e8476bc9cac781ae240116284f0db3bcec24d39af9b6779cffe1dbdc: sink_five
+        b956a04d4ff81826838ff9d54aec7bdaed5c6433a7d7317ac0ee0923805f31f1: pattern_match_processor
+        d756a1550b0cfb1302da434807ab0d98e7f2c9e157f9198e68a7c9517217bbf3: combine_vertical_id
+        df275f6d05336fcd898718d28a4e300283b05c8d1b54bf8d110387abb9062312: locs
+        ec1283e6d20d9262b5b5b9ef1beb2a3a3e2543c9b0afc8c31c8ad2201412e770: sink_three
+    package_id: utility
+    version: ''
+project_id: null
+version: null
