@@ -1,4 +1,4 @@
-name: ECR build push at BRANCH_NAME
+name: ECR build push at main
 on:  
   push:
     branches: BRANCH_NAME
@@ -6,7 +6,7 @@ on:
 jobs:
   build_push:
     runs-on: ubuntu-latest
-    if: ${ github.ref_type == 'branch' } && ${ github.ref == 'refs/heads/BRANCH_NAME' }
+    if: ${ github.ref_type == 'branch' } && ${ github.ref == 'refs/heads/main' }
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.0
