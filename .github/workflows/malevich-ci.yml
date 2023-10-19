@@ -1,12 +1,12 @@
 name: ECR build push at main
 on:  
   push:
-    branches: BRANCH_NAME
+    branches: main
   workflow_dispatch:
 jobs:
   build_push:
     runs-on: ubuntu-latest
-    if: ${ github.ref_type == 'branch' } && ${ github.ref == 'refs/heads/main' }
+    if: ${{ github.ref_type == 'branch' }} && ${{ github.ref == 'refs/heads/main' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.0
@@ -15,11 +15,11 @@ jobs:
       - name: Malevich Actions
         uses: MalevichAI/auto-ci@v0.2.0
         with:
-          registry: ${ secrets.REGISTRY_TYPE }
-          registry_url: ${ secrets.REGISTRY_URL }
-          registry_id: ${ secrets.REGISTRY_ID }
-          username: ${ secrets.AWS_ACCESS_KEY_ID }
-          password: ${ secrets.AWS_SECRET_ACCESS_KEY }
-          space_username: ${ secrets.SPACE_USERNAME }
-          space_password: ${ secrets.SPACE_PASSWORD }
-          api_url: ${ secrets.API_URL }
+          registry: ${{ secrets.REGISTRY_TYPE }}
+          registry_url: ${{ secrets.REGISTRY_URL }}
+          registry_id: ${{ secrets.REGISTRY_ID }}
+          username: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          password: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          space_username: ${{ secrets.SPACE_USERNAME }}
+          space_password: ${{ secrets.SPACE_PASSWORD }}
+          api_url: ${{ secrets.API_URL }}
