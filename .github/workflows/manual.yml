@@ -11,7 +11,7 @@ jobs:
       - name: Malevich Actions
         uses: MalevichAI/auto-ci@v0.2.0
         with:
-          registry: 'ecr-private'
+          registry: 'ecr'
           registry_url: ${{ secrets.REGISTRY_URL }}
           registry_id: ${{ secrets.REGISTRY_ID }}
           username: ${{ secrets.IMAGE_USERNAME }}
