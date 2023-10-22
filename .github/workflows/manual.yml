@@ -8,6 +8,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.0
+      - run: |
+          echo ${{ github.event.head_commit.message }}
       - name: Malevich Actions
         uses: MalevichAI/auto-ci@v0.2.0
         with:
