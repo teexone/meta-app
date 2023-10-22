@@ -8,8 +8,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.0
-      - run: |
-          echo $(git log | grep -P "commit [a-z0-9]{40}" -m 1 | cut -d ' ' -f2 | git log --format=%B -n 1)
       - name: Malevich Actions
         uses: MalevichAI/auto-ci@v0.2.0
         with:
