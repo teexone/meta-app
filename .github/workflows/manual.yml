@@ -19,4 +19,4 @@ jobs:
           space_username: ${{ secrets.SPACE_USERNAME }}
           space_password: ${{ secrets.SPACE_PASSWORD }}
           api_url: ${{ secrets.API_URL }}
-          region: 'us-east-1'
+  
